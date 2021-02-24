@@ -7,7 +7,27 @@ export function ChallengeBox() {
     <div className={styles.challengeBoxContainer}>
       { hasActiveChallenge ? (
         <div className={styles.challengeActive}>
-          
+          <header>Ganhe 400xp</header>
+
+          <main>
+            <img src="icons/body.svg"/>
+            <strong>Novo desafio</strong>
+            <p>levante e faça uma caminhada de 3 minutos</p>
+          </main>
+
+          <footer>
+            <button 
+              type="button"
+            >
+              Falhei
+            </button>
+
+            <button 
+              type="button"
+            >
+              Completei
+            </button>
+          </footer>
         </div>
       ) : (
         <div className={styles.challengeNotActive}>
